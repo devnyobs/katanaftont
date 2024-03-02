@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.headerimg {
+  width: 100%;
+  height: auto;
+}
+.thenav {
+  position: fixed;
+  z-index: 100;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #332f2f;
+}
+.linkpages,
+.logo {
+  color: white;
+}
+.navigator ul {
+  display: flex;
+}
+.linkpages {
+  font-size: 1.2em;
+  padding: 5px 2px;
+  margin: 0 10px;
+}
+.active {
+  color: #9c510a;
+  background-color: white;
+  border-radius: 30%;
+  font-size: 1.4em;
+}
+.icon {
+  font-size: 30px;
+  display: none;
+  color: white;
+}
+
+.thehaider {
+  position: relative;
+}
+
+/* this part is for item container for home page*/
+
+.thehometitle {
+  color: #d46c0a;
+  position: absolute;
+  text-align: center;
+  font-size: 3em;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.gridbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.itemcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #332f2f;
+  border-radius: 5px;
+  width: 350px;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.itemcontainer:hover {
+  background-color: #a4c1d1;
+}
+
+.itemtitle {
+  font-size: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #9c510a;
+  font-family: Georgia, serif, sans-serif;
+}
+.itemsubtitle {
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #0d61df;
+  text-align: center;
+}
+.itemparag {
+  font-size: 18px;
+  text-align: justify;
+}
+.footeritem {
+  margin: 10px 0 2px;
+}
+.presimg {
+  width: 100%;
+  height: auto;
+}
+.logocontainerhome {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logosimghome {
+  background-color: #82abe9;
+  color: #083f91;
+  width: 150px;
+  height: 150px;
+  margin: 10px 0 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textlogohome {
+  font-size: 25px;
+}
+/*end of home page */
+
+/*the footer */
+
+.footercontainer {
+  position: "absolute";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding: 30px 20px;
+  background-color: #332f2f;
+  color: #fff;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.logofooter {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footercard {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.footercardtitle {
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+.footerelement {
+  font-size: 18px;
+  margin: 10px 0;
+}
+/*end footer */
+
+/*start event page */
+.event {
+  padding-top: 70px;
+  min-height: 80vh;
+  margin-bottom: 20px;
+}
+.singmeimgevent {
+  max-width: 350px;
+  height: auto;
+  padding: 5px;
+  border: 1px solid #332f2f;
+}
+.scontainerevent {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #9c510a;
+  border-radius: 10px;
+}
+.seventtitle {
+  color: #9c510a;
+  font-size: 3em;
+  text-align: center;
+}
+.seventsubt {
+  color: #083f91;
+  font-size: 1.7em;
+  text-align: center;
+}
+.seventcont {
+  font-size: 1.3em;
+  text-align: justify;
+}
+/*end event page */
+
+/*start watch page*/
+.watch {
+  padding-top: 70px;
+  min-height: 80vh;
+  margin-bottom: 30px;
+}
+.containerwithvideo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+/* End watch page */
+
+/* book page*/
+.book {
+  padding-top: 70px;
+  min-height: 80vh;
+  margin-bottom: 30px;
+}
+
+.footerbtn {
+  margin: 10px 0;
+  padding: 5px;
+  color: white;
+  background-color: #332f2f;
+  border-radius: 20px;
+}
+/*end book */
+
+/* sermon page*/
+.titleform {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.sermoncontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #332f2f;
+  border-radius: 5px;
+  width: 350px;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.boxcontent {
+  box-sizing: border-box;
+}
+.inputbox {
+  position: relative;
+  width: 280px;
+  margin: 15px 0;
+}
+.inputbox input,
+.inputbox textarea {
+  width: 89%;
+  padding: 12px;
+  border: 1px solid #332f2f;
+  border-radius: 5px;
+  outline: none;
+  color: #332f2f;
+  font-size: 1.2em;
+  transition: 0.5s;
+}
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1.3em;
+  color: #332f2f;
+  transition: 0.5s;
+}
+.inputbox input:valid ~ span,
+.inputbox textarea:valid ~ span,
+.inputbox textarea:focus ~ span,
+.inputbox input:focus ~ span {
+  color: #0d61df;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 1em;
+  padding: 0 10px;
+  background: #fff;
+  border-left: 1px solid #0d61df;
+  border-right: 1px solid #0d61df;
+  letter-spacing: 0.15em;
+}
+.inputbox textarea:valid,
+.inputbox textarea:focus,
+.inputbox input:valid,
+.inputbox input:focus {
+  border: 1px solid #0d61df;
+}
+.submitbtn {
+  font-size: 1.5em;
+  color: #9c510a;
+  font-family: Georgia, serif, sans-serif;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.submitbtn:focus-within {
+  color: #fff;
+  background-color: #9c510a;
+}
+.btnsubmitbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sermonsingledescription {
+  color: #083f91;
+  font-size: 1.3em;
+  text-align: justify;
+  font-weight: bold;
+  max-width: 500px;
+  padding: 20px 10px;
+}
+.sermonsingletitle {
+  color: #9c510a;
+  font-size: 2em;
+  text-align: center;
+  padding: 0 10px;
+  max-width: 500px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.videobox {
+  width: 80%;
+  height: auto;
+}
+/* end sermon */
+
+/*start login page*/
+.contact {
+  padding-top: 80px;
+  margin-bottom: 30px;
+}
+.msglogin {
+  text-transform: capitalize;
+  font-size: 1.3em;
+  color: #9c510a;
+  text-decoration: underline;
+  padding: 3px 0 10px;
+  text-align: center;
+}
+/* End login page */
+
+@media screen and (max-width: 820px) {
+  .navigator {
+    position: absolute;
+    top: 60px;
+    right: -310px;
+    width: 300px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #332f2f;
+    backdrop-filter: blur(10px);
+  }
+  .navigator.mobilmenu {
+    right: 0;
+    transition: 0.5s;
+  }
+  .navigator ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon {
+    display: block;
+    cursor: pointer;
+  }
+  .icon:hover {
+    color: #9c510a;
+    background-color: #fff;
+    border-radius: 30%;
+  }
+  .navigator ul li {
+    margin: 10px 0;
+  }
+}
+
+.adminhome{
+  padding:70px 10px 40px;
+}

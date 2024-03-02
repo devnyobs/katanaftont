@@ -1,0 +1,17 @@
+ordre du travail
+
+ok 1- finir la vue simple de toutes les pages (l'une apres l'autre)
+ok 2- integrer toutes les childs pages
+ok 4-integrer les navigations vers les childs pages
+ok 3-integrer les videos
+* 5-animation des components
+* 6-animation des pages
+ok7-page de login
+8-form validation (toastification)
+8-presentation simple de la page d'administration (sidebar et les composants) sans composants
+9-css sur la page d'administration
+10- ajout d'un event cote admin
+11-ajout videos côté admin
+12-ajout d'un livre coté admin
+13-ajout cermon cote admin
+14-fin du frontend
