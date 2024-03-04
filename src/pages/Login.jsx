@@ -1,15 +1,23 @@
 import Textfield from "../components/Textfield";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useFormik } from "formik";
 import { Loginvalidation } from "../helpers/Validator";
-import { ValidationError } from "yup";
+import Toastifacation from "../helpers/Toastification";
 
 function Login() {
   const navigate = useNavigate();
 
   const [Email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
+  const [showNot, setshowNot] = useState(false);
+
+  function Shownotification() {
+    setshowNot(true);
+    setTimeout(() => {
+      setshowNot(false);
+      navigate("/admin");
+    }, 2000);
+  }
 
   const handleSublit = async (e) => {
     e.preventDefault();
@@ -28,7 +36,7 @@ function Login() {
       Email === defaultValue.email &&
       Password === defaultValue.password
     ) {
-      navigate("/admin");
+      Shownotification();
     } else {
       console.log("Your data is not valid JUST FOR ADMIN PLEASE");
     }
@@ -40,6 +48,7 @@ function Login() {
   return (
     <>
       <div className="watch gridbox">
+        {showNot && <Toastifacation />}
         <div className="sermoncontainer">
           <h1 className="itemtitle">login</h1>
           <div className="boxcontent">

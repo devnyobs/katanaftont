@@ -1,8 +1,39 @@
+import { useState } from "react";
 import Textarea from "../components/Textarea";
 import Textfield from "../components/Textfield";
-Textarea;
+import { Prayervalidation } from "../helpers/Validator";
 
 function Sermon() {
+  const [name, setName] = useState("");
+  const [adress, setAdress] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [prayer, setPrayer] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const validdata = await Prayervalidation.validate({
+      name,
+      adress,
+      email,
+      phone,
+      prayer,
+    });
+
+    if (validdata) {
+      console.log({ message: "your prayers are sended", data: validdata });
+    } else {
+      console.log("your data is not valid");
+    }
+
+    setName("");
+    setAdress("");
+    setEmail("");
+    setPhone("");
+    setPrayer("");
+  };
+
   return (
     <>
       <div className="watch gridbox">
@@ -10,14 +41,42 @@ function Sermon() {
           <h1 className="itemtitle">Prayer Request</h1>
           <div className="boxcontent">
             <form action="">
-              <Textfield typetext="text" title="Your Name" />
-              <Textfield typetext="text" title="Adress" />
-              <Textfield typetext="email" title="Your Email" />
-              <Textfield typetext="number" title="Your phone" />
-              <Textfield typetext="text" title="Prayer topics" />
-              <Textarea name="plaintext" title="Prayer topics" />
+              <Textfield
+                typetext="text"
+                title="Your Name"
+                Valid={name}
+                onValidate={setName}
+              />
+              <Textfield
+                typetext="text"
+                title="Adress"
+                Valid={adress}
+                onValidate={setAdress}
+              />
+              <Textfield
+                typetext="email"
+                Valid={email}
+                onValidate={setEmail}
+                title="Your Email"
+              />
+              <Textfield
+                typetext="number"
+                title="Your phone"
+                Valid={phone}
+                onValidate={setPhone}
+              />
+              <Textarea
+                name="plaintext"
+                title="Prayer topics"
+                Value={prayer}
+                onValidate={setPrayer}
+              />
               <div className="btnsubmitbox">
-                <button type="button" className="submitbtn">
+                <button
+                  type="submit"
+                  onClick={handleSubmit}
+                  className="submitbtn"
+                >
                   SUBMIT
                 </button>
               </div>

@@ -7,11 +7,11 @@ ok 3-integrer les videos
 * 5-animation des components
 * 6-animation des pages
 ok7-page de login
-8-form validation (toastification)
-8-presentation simple de la page d'administration (sidebar et les composants) sans composants
-9-css sur la page d'administration
-10- ajout d'un event cote admin
-11-ajout videos côté admin
-12-ajout d'un livre coté admin
-13-ajout cermon cote admin
+ok8-form validation (toastification)
+ok 8-presentation simple de la page d'administration (sidebar et les composants) sans composants
+ok 9-css sur la page d'administration
+ok 10- ajout d'un event cote admin
+ok 11-ajout videos côté admin
+ok 12-ajout d'un livre coté admin
+ok 13-ajout cermon cote admin
 14-fin du frontend

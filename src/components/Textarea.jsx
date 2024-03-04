@@ -1,7 +1,14 @@
-function Textarea({title, name}) {
+function Textarea({ title, Value, onValidate }) {
   return (
     <div className="inputbox">
-      <textarea name={name} required="required" multiple={true} />
+      <textarea
+        name="plaintext"
+        value={Value}
+        onChange={(e) => onValidate(e.target.value)}
+        required="required"
+        multiple={true}
+        rows={4}
+      />
       <span> {title} </span>
     </div>
   );
